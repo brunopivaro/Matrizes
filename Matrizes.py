@@ -72,3 +72,26 @@ print(np.dot(matriz1, matriz2))
 
 # Matrix Product
 # - O número de colunas da matriz esquerda deve ser igual ao número de linhas da matriz direita
+
+
+# Transposta da Matriz
+matriz_original = np.array([[1, 2], [3, 4]])
+print(matriz_original)
+
+matriz_transposta = matriz_original.T
+print(matriz_transposta)
+
+# Calculando a determinante
+determinante = np.linalg.det(matriz_original)
+print(determinante)
+
+# Calculando a matriz inversa
+matriz_inversa = np.linalg.inv(matriz_original)
+print(matriz_inversa)
+
+# Autovalores e Autovetores
+matriz_auto = np.array([[2, 2, 1], [1, 3, 1], [1, 2, 2]])
+
+w, v = np.linalg.eig(matriz_auto)
+print("Autovalor: ",  w)
+print("Autovetor: ", v)
